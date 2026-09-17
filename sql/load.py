@@ -44,7 +44,7 @@ cur = con.cursor()
 for t in ("property", "theme", "review", "review_theme"):
     print(f"  {t:<14}{cur.execute(f'SELECT COUNT(*) FROM {t}').fetchone()[0]:>6} rows")
 
-print("\ncheck 1 — every written review is coded")
+print("\ncheck 1: every written review is coded")
 gap = cur.execute("""
     SELECT COUNT(*) FROM review r
      WHERE r.is_written = 1
@@ -52,14 +52,14 @@ gap = cur.execute("""
 print(f"  written reviews with no theme row: {gap}"
       f"   {'(all generic praise, no theme to code)' if gap else ''}")
 
-print("\ncheck 2 — no theme tagged on a review too short to code")
+print("\ncheck 2: no theme tagged on a review too short to code")
 bad = cur.execute("""
     SELECT COUNT(*) FROM review_theme t
       JOIN review r ON r.review_id = t.review_id
      WHERE r.is_written = 0""").fetchone()[0]
 print(f"  tags on unwritten reviews: {bad}   {'OK' if bad == 0 else 'PROBLEM'}")
 
-print("\ncheck 3 — sample mean against Booking's published score")
+print("\ncheck 3: sample mean against Booking's published score")
 for key, name, *_ in [(p[0], p[1]) for p in PROPERTIES]:
     pass
 for row in cur.execute("""

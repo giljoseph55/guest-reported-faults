@@ -1,4 +1,4 @@
-# Guest-reported faults — analysis and requirements
+# Guest-reported faults: analysis and requirements
 
 A business analysis end to end: 222 hand-collected hotel reviews, coded into an auditable
 data set, queried in SQL, and turned into a requirements document with process maps, UML and
@@ -12,7 +12,7 @@ intended to transfer.
 ## The finding
 
 Across 30 written reviews at the subject property, **9 guests reported that something did not
-work** — 30% of everyone who wrote anything.
+work**, 30% of everyone who wrote anything.
 
 | Property | Written reviews | Raised a fault | Share |
 |---|---|---|---|
@@ -21,7 +21,7 @@ work** — 30% of everyone who wrote anything.
 | Rosewood | 31 | 1 | 3.2% |
 | De L'Europe | 12 | 0 | 0.0% |
 
-Three of the nine describe a fault that had **already been reported and was still broken** —
+Three of the nine describe a fault that had **already been reported and was still broken**:
 a room light, an engineer who came and left it working no better, a lift out of service for
 three days.
 
@@ -42,7 +42,7 @@ elsewhere. That is worth nothing on its own, so it is tested rather than asserte
 | **Subject property** | 7.70 | 8.2 | **−0.50** |
 
 **Three of the four reproduce the published score within a tenth of a point.** The same
-collection method, applied the same way, at the same time. The fourth does not — and that is
+collection method, applied the same way, at the same time. The fourth does not, and that is
 the finding rather than a defect, precisely because the method demonstrably works on the
 other three.
 
@@ -106,7 +106,7 @@ published score says it should.
 `SUM(is_written)` alongside a join to `review_theme`. A review carrying four themes appears
 four times after that join, so the subject property reported **80** written reviews instead
 of 30. The percentage looked plausible and was wrong by a factor of two and a half. Fixed by
-counting the denominator in its own CTE. Fan-out never raises an error — it just quietly
+counting the denominator in its own CTE. Fan-out never raises an error. It just quietly
 changes the answer.
 
 **A semicolon inside a comment split a statement.** `-- Sixteen solo guests is thin; the

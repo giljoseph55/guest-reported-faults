@@ -1,11 +1,11 @@
 # Process and UML
 
 Companion to [`01-requirements.md`](01-requirements.md). Diagrams are Mermaid, which GitHub
-renders in place — no image files to go stale against the text.
+renders in place, so no image files to go stale against the text.
 
 ---
 
-## 1. As-is — how a guest-reported fault travels today
+## 1. As-is: how a guest-reported fault travels today
 
 Reconstructed from what guests describe in the reviews, not from observation inside the hotel.
 It is a hypothesis to be corrected in the first working session, and the point of drawing it
@@ -28,7 +28,7 @@ flowchart TD
     R -->|Yes| F
     R -->|No| L([Lost])
     F --> S{Fixed?}
-    S -->|Yes| Z([Closed — but nobody tells the guest])
+    S -->|Yes| Z([Closed, but nobody tells the guest])
     S -->|No, needs parts| Q
 
     style X fill:#f4dede,stroke:#a33
@@ -37,10 +37,10 @@ flowchart TD
 ```
 
 **Three exits, and two of them are silent.** A fault can end in a review the hotel reads a
-week later, or in nothing at all. Even the good exit leaves the guest uninformed — which is
+week later, or in nothing at all. Even the good exit leaves the guest uninformed, which is
 the one a guest can actually observe, and the one they write about.
 
-## 2. To-be — the same journey with a state and an owner
+## 2. To-be: the same journey with a state and an owner
 
 ```mermaid
 flowchart TD
@@ -63,10 +63,10 @@ flowchart TD
 ```
 
 **One change carries the rest.** Every fault has a state, and the open ones are counted where
-somebody is already looking. Everything else — assignment, escalation, telling the guest —
+somebody is already looking. Everything else (assignment, escalation, telling the guest)
 becomes possible only because the fault is visibly open.
 
-## 3. Activity diagram — closing a fault
+## 3. Activity diagram: closing a fault
 
 The decision points a Duty Manager actually faces on a shift.
 
@@ -90,7 +90,7 @@ stateDiagram-v2
 **Age runs from the guest's report, not from assignment.** Measuring from assignment would
 make an unassigned fault look young, which is exactly backwards.
 
-## 4. Sequence diagram — the reporting and closing interaction
+## 4. Sequence diagram: the reporting and closing interaction
 
 ```mermaid
 sequenceDiagram

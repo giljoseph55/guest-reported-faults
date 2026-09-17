@@ -1,4 +1,4 @@
-# Guest-reported fault tracking — requirements
+# Guest-reported fault tracking: requirements
 
 **Status** Draft for discussion · **Author** Gilroy Joseph · **Date** September 2026
 **Evidence base** 222 Booking.com reviews, four Amsterdam five-star hotels, 14 January – 8 September 2026
@@ -8,7 +8,7 @@
 ## 1. Why this exists
 
 Across 30 written reviews at the subject property, **9 guests reported that something in the
-hotel did not work** — 30% of everyone who wrote anything. At three comparable Amsterdam
+hotel did not work**, 30% of everyone who wrote anything. At three comparable Amsterdam
 hotels the same measure runs between 0% and 5.9%.
 
 Three of those nine describe a fault that had **already been reported and was still broken**:
@@ -27,7 +27,7 @@ guest-reported fault has an owner and a closing date, or whether it stops at a s
 **This document assumes the answer is not known, and specifies the smallest thing that would
 make it known.** It does not assume the hotel lacks a maintenance system. It assumes nobody
 can currently answer *"how many guest-reported faults are open right now, and how old is the
-oldest one?"* — and that is a different question from *"do we log faults?"*
+oldest one?"*, and that is a different question from *"do we log faults?"*
 
 ## 2. Scope
 
@@ -35,7 +35,7 @@ oldest one?"* — and that is a different question from *"do we log faults?"*
 something in the guest's room or on the guest's route through the building.
 
 **Out of scope.** Planned maintenance. Faults found by staff during inspection. Anything
-requiring capital approval. Complaint handling, service recovery and compensation — those are
+requiring capital approval. Complaint handling, service recovery and compensation, those are
 separate processes that may be triggered by a fault but are not part of tracking it.
 
 **Explicitly out of scope: buying anything.** The measure below is intended to run on whatever
@@ -55,7 +55,7 @@ itself and a larger conversation.
 
 ## 4. Problem statement
 
-Fault reports enter through several doors — desk, phone, housekeeping, in-room — and there is
+Fault reports enter through several doors (desk, phone, housekeeping, in-room) and there is
 no single place where an open fault is visibly open. A fault that is not visibly open cannot
 be chased, and a guest who reported one has no way of knowing whether anything happened.
 

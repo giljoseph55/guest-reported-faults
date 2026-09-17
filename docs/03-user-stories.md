@@ -134,7 +134,7 @@ run, not a statement somebody can agree with.
 > **I want** faults open beyond a threshold to surface without me going looking
 > **so that** the oldest one is never a surprise.
 
-*Traces to BR-08. Could-have — the threshold should be set from the first month of real data,
+*Traces to BR-08. Could-have. The threshold should be set from the first month of real data,
 not guessed now.*
 
 **Acceptance criteria**

@@ -1,5 +1,5 @@
 -- =====================================================================
---  guest_reviews.db — schema
+--  guest_reviews.db schema
 --
 --  Booking.com reviews for four Amsterdam five-star hotels, 14 January
 --  to 8 September 2026, collected by hand.
@@ -18,7 +18,7 @@ DROP TABLE IF EXISTS property;
 -- Dimension: the four hotels, with what Booking published about each at
 -- the time of collection. published_score and published_count are kept
 -- so that the sample can be checked against the population it came from
--- — that check is the whole basis for trusting the sample at all.
+-- that check is the whole basis for trusting the sample at all.
 CREATE TABLE property (
     property_key      TEXT PRIMARY KEY,
     name              TEXT    NOT NULL,

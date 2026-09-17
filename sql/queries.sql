@@ -1,5 +1,5 @@
 -- =====================================================================
---  Guest review analysis — every published figure, as a query
+--  Guest review analysis: every published figure, as a query
 --  Database : guest_reviews.db (SQLite)
 --  Corpus   : 222 Booking.com reviews, four Amsterdam five-star hotels,
 --             14 January – 8 September 2026, collected by hand
@@ -25,7 +25,7 @@
 --
 --      Three of the four sample means land within 0.10 of the score
 --      Booking publishes over its own 36-month window. The fourth does
---      not — and that gap is the finding, not a fault in the method,
+--      not, and that gap is the finding, not a fault in the method,
 --      precisely because the same method reproduced the other three.
 -- ---------------------------------------------------------------------
 SELECT  p.name                                              AS property,

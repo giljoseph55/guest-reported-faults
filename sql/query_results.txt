@@ -1,4 +1,4 @@
-QUERY RESULTS — guest_reviews.db
+QUERY RESULTS: guest_reviews.db
 Run 2026-09-16 by Gilroy Joseph
 222 Booking.com reviews, four Amsterdam five-star hotels, 14 Jan - 8 Sep 2026
 ==============================================================================

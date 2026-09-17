@@ -4,8 +4,8 @@ Coding frame and theme assignments for the Booking review corpus.
 WHY THIS FILE EXISTS
 --------------------
 The original analysis tagged these reviews by reading them and deciding what
-each one was about. That is the right method for 90 reviews — a keyword search
-for "broken" misses "the aircon did not work" and catches "broken promises" —
+each one was about. That is the right method for 90 reviews. A keyword search
+for "broken" misses "the aircon did not work" and catches "broken promises",
 but the tags themselves were never written down. The percentages could not be
 checked by anyone, including the person who produced them.
 
@@ -35,7 +35,7 @@ RULES APPLIED
    negative on another. Review 31 praises the front desk and reports three
    things not working.
 4. 'broken' means equipment that did not work. A television that is absent,
-   or a bathroom the guest wanted to be larger, is 'room' or 'bathroom' —
+   or a bathroom the guest wanted to be larger, is 'room' or 'bathroom',
    a preference, not a fault.
 5. Where a fault sits in the bathroom, both 'broken' and 'bathroom' are
    tagged. The guest experienced one thing; the two questions "what broke"
