@@ -1,0 +1,84 @@
+QUERY RESULTS — guest_reviews.db
+Run 2026-09-16 by Gilroy Joseph
+222 Booking.com reviews, four Amsterdam five-star hotels, 14 Jan - 8 Sep 2026
+==============================================================================
+
+Q1.  DOES THE SAMPLE LOOK LIKE THE POPULATION?
+------------------------------------------------------------------------------
+  property                          booking_holds  i_read  coverage_pct  sample_mean  booking_score  delta
+  --------------------------------  -------------  ------  ------------  -----------  -------------  -----
+  Mandarin Oriental Conservatorium  270            70      26.0          7.7          8.2            -0.5 
+  De L'Europe Amsterdam             319            33      10.0          9.18         9.2            -0.02
+  Waldorf Astoria Amsterdam         192            38      20.0          9.45         9.4            0.05 
+  Rosewood Amsterdam                151            81      54.0          9.0          8.9            0.1  
+  (4 rows)
+
+Q2.  PROMOTERS AND DETRACTORS
+------------------------------------------------------------------------------
+  property                          reviews  promoter_pct  detractor_pct
+  --------------------------------  -------  ------------  -------------
+  Mandarin Oriental Conservatorium  70       40.0          20.0         
+  Rosewood Amsterdam                81       77.8          6.2          
+  De L'Europe Amsterdam             33       78.8          3.0          
+  Waldorf Astoria Amsterdam         38       81.6          0.0          
+  (4 rows)
+
+Q3.  WHAT THE UNHAPPY GUESTS COMPLAINED ABOUT
+------------------------------------------------------------------------------
+  complaint             guests
+  --------------------  ------
+  Room, or check-in     7     
+  Waiting, or no reply  6     
+  Billing               3     
+  Something broken      3     
+  Staff                 3     
+  Food & drink          2     
+  Value for money       2     
+  Bathroom              1     
+  Cleanliness           1     
+  Noise                 1     
+  (10 rows)
+
+Q4.  HOW THE SUBJECT COMPARES ON EACH THEME
+------------------------------------------------------------------------------
+  theme                 subject_pct  peers_low  peers_high
+  --------------------  -----------  ---------  ----------
+  Room, or check-in     43.3         16.1       23.5      
+  Something broken      30.0         0.0        5.9       
+  Waiting, or no reply  26.7         0.0        29.0      
+  Staff                 26.7         0.0        22.6      
+  Bathroom              20.0         0.0        5.9       
+  Value for money       13.3         0.0        9.7       
+  Food & drink          13.3         5.9        29.0      
+  Billing               13.3         0.0        3.2       
+  Cleanliness           10.0         0.0        8.3       
+  Noise                 3.3          0.0        8.3       
+  (10 rows)
+
+Q5.  THE ONE THEME THAT SEPARATES THE SUBJECT
+------------------------------------------------------------------------------
+  property                          written_reviews  raised_it  pct 
+  --------------------------------  ---------------  ---------  ----
+  Mandarin Oriental Conservatorium  30               9          30.0
+  Waldorf Astoria Amsterdam         17               1          5.9 
+  Rosewood Amsterdam                31               1          3.2 
+  De L'Europe Amsterdam             12               0          0.0 
+  (4 rows)
+
+Q6.  WHO IT HAPPENED TO
+------------------------------------------------------------------------------
+  traveller  guests  unhappy  unhappy_pct
+  ---------  ------  -------  -----------
+  Solo       16      6        37.5       
+  Family     16      3        18.8       
+  Couple     35      5        14.3       
+  (3 rows)
+
+Q7.  FAULTS THE GUEST SAYS WERE ALREADY REPORTED
+------------------------------------------------------------------------------
+  review_id  rating  text_clean                                                               
+  ---------  ------  -------------------------------------------------------------------------
+  16         1.0     The location was the only thing I really liked. Street noise could cle...
+  1          5.0     Set up and design are very beautiful. Had to change rooms due to airco...
+  23         7.0     Great location, helpful and attentive staff, comfortable room, excelle...
+  (3 rows)
