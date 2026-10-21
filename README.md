@@ -1,5 +1,11 @@
 # Guest-reported faults: analysis and requirements
 
+**Question:** How often do guests of a five-star Amsterdam hotel in the middle of a brand change write that something did not work, and is that unusual against comparable hotels?
+
+**Finding:** 9 of 30 written reviews (30.0%) report a fault, against 3.2% at Rosewood (1 of 31) and 5.9% at Waldorf Astoria (1 of 17); 3 of the 9 describe a fault already reported and still broken.
+
+**So what:** If the 30.0% holds beyond this sample, faults reach guests at roughly five to nine times the rate of the two peers with comparable sample sizes, so fault tracking is where a property manager should look first. Three repeat cases are not a pattern, and 30 reviews is a small base.
+
 A business analysis end to end: 222 hand-collected hotel reviews, coded into an auditable
 data set, queried in SQL, and turned into a requirements document with process maps, UML and
 user stories.
